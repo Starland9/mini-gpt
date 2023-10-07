@@ -20,7 +20,6 @@ function ChatBlocResponse({ message }) {
       })
       .catch((e) => {
         console.log(e);
-        setResponse(e.message);
       })
       .finally(setLoading(false));
   }, [message]);
